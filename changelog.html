@@ -1,0 +1,219 @@
+<br><div id="content">
+  <center><h2>Changelog – Extended Admincall Script</h2></center>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.25 (öffentlicher Changelog-Spiegel)
+  <ul>
+    <li>Der Versionslink im Admincall lädt den Changelog jetzt aus dem separaten öffentlichen Repository <code>Windows-Browser-Scripts-Changelog</code>. Das Hauptrepository kann privat bleiben.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.24 (Arbeitsansicht als Standard)
+  <ul>
+    <li>„Standard laden“ verwendet nun die gewünschte Arbeitsansicht: keine automatische Aktualisierung, Details in der Übersicht, den Link „Meldung beantragen“ und die Filterung bisheriger Meldungen auf schuldige Fälle.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.23 (AET-Standardtext richtig zugeordnet)
+  <ul>
+    <li>Bei „AET Verwarnung“ stehen Zusammenfassung und Aufklärung per <code>/m</code> wieder in den passenden Spalten. Bereits gespeicherte, unveränderte Standardwerte korrigiert das Script automatisch.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> Extended EMS V1.1 (Sonderzeichen-Abgleich)
+  <ul>
+    <li>Der Abgleich von Nicks und E-Mail-Adressen verwendet dekodierten, Unicode-normalisierten Text und erkennt damit Umlaute sowie ß zuverlässig.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.22 (EMS-Bereiche klar getrennt)
+  <ul>
+    <li>Bei positiven EMS-Treffern trennen Leerzeilen Status und Zweitnick-Überschrift; die Nicks selbst folgen direkt untereinander.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.21 (EMS-Zweitnicks mit Abstand)
+  <ul>
+    <li>Die Ausgabe der EMS-Zweitnicks wurde für eine bessere Lesbarkeit gegliedert.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.20 (EMS-Zweitnicks zeilenweise)
+  <ul>
+    <li>Positive EMS-Treffer listen jeden gefundenen Zweitnick übersichtlich in einer eigenen Zeile auf.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.19 (EMS-Zweitnicks)
+  <ul>
+    <li>Die EMS-Kontrolle wird nur bei schuldigen, AET-relevanten Altfällen zu anderen Nicks derselben E-Mail positiv und listet die gefundenen Zweitnicks darunter auf.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.18 (EMS-Befund unter der Überschrift)
+  <ul>
+    <li>Die kurze EMS-Zeile nennt zuerst das Ergebnis und danach den E-Mail-Hinweis, zum Beispiel „Negativ – E-Mail vorhanden“.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.17 (kompakte EMS-Ausgabe)
+  <ul>
+    <li>Der automatisch eingetragene EMS-Status ist kurz gehalten.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.16 (klare EMS-Statusanzeige)
+  <ul>
+    <li>Die EMS-Ausgabe trennt jetzt klar zwischen vorhandener E-Mail-Adresse und Prüfergebnis, zum Beispiel „E-Mail-Adresse vorhanden – EMS: Negativ“.</li>
+    <li>Ohne E-Mail und bei fehlgeschlagenem Abruf werden eigene, eindeutige Status angezeigt.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.15 (EMS-Status bei vorhandener E-Mail)
+  <ul>
+    <li>Die automatische EMS-Prüfung zeigt bei vorhandener E-Mail-Adresse den E-Mail-Status auch bei einem negativen Ergebnis an.</li>
+    <li>Ein fehlgeschlagener Abruf wird getrennt ausgewiesen.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>22.10.2026</b> V1.14 (KCode-Überschriften und Kommentarprüfung)
+  <ul>
+    <li>Die Überschriften neuer AET-Vorlagen sind mit Kanal-Blau (<code>°BB° … °r°</code>) hervorgehoben.</li>
+    <li>Die Kanalmarkierung <code>[E]</code> für Erotikchannels gilt nicht mehr als offener Kommentarplatzhalter; die Platzhalter-Navigation überspringt sie ebenfalls.</li>
+    <li>Alleinstehende <code>#</code>-Zeilen sind KCode-Zeilenumbrüche und werden nicht mehr als Teil der Zusammenfassung in einen Admincomment übernommen.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>13.10.2026</b> V1.13 (zusammengefasste AET-Fälle)
+  <ul>
+    <li>Das Verwarnungsmenü trennt nun „Normale Verwarnungen“ und „AE-Themen“. Standardthemen werden kurz angezeigt, der vollständige Name bleibt als Tooltip erhalten.</li>
+    <li>Zusammengefasste AET-Meldungen mit demselben gemeldeten Nick erkennen berechtigte Einzelbewertungen und die zugehörigen Profilkarten. Dadurch werden Vorlage, EMS und AE-Vorverstöße wieder befüllt.</li>
+    <li>Ein schuldiger, zusammengefasster AET-Eintrag in „Meldungen bisher“ wird einmal als AE-Vorverstoß berücksichtigt.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>11.10.2026</b> V1.12 (AET-Aufklärung per /m)
+  <ul>
+    <li>AET-Fallbausteine tragen nur noch eine kurze fachliche Zusammenfassung wie „Demagogie“ ein. Der konkrete Chattext im Bereich „Verstoß dieser Meldung“ bleibt unverändert.</li>
+    <li>Die Auswahl im Menü „Verwarnung“ kopiert nun eine vollständige private Nachricht statt eines nicht verfügbaren <code>/macro warn</code>-Befehls. Der Aufklärungstext gehört zum gewählten Fallbaustein; der Admincomment wird beim Übernehmen automatisch kopiert, ohne einen zusätzlichen Abschlussbutton.</li>
+    <li>Neu ist der Baustein „NS-belastete Aussage / Redewendung“ mit einer Aufklärung zur Formulierung „Jedem das Seine“.</li>
+  </ul>
+</div>
+<div class="memberWrapper" style="margin-bottom: 5px">
+    <b>05.10.2026</b> V1.11 (Nachricht an Beschuldigte)
+    <ul>
+      <li>Nach einer abgeschlossenen Bewertung mit Urteil „Schuldig“ erscheint in der Aktionsleiste ein Button für den Beschuldigten. Er kopiert <code>/m NICK:</code> direkt in die Zwischenablage, damit die Nachricht im Chat geöffnet werden kann.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>04.10.2026</b> V1.10 (Rauten in Kommentaren behalten)
+    <ul>
+      <li>Eine zweite führende Raute wird beim Tippen nicht mehr entfernt – weder in AET-Weiterleitungen noch in anderen Kommentaren. Ältere AET-Entwürfe mit <code>##</code> werden nur beim Übernehmen eines AET-Bausteins in zwei einzelne <code>#</code>-Zeilen überführt.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>03.10.2026</b> V1.9 (AET-Einstieg mit zwei Rauten)
+    <ul>
+      <li>Neue vollständige AET-Vorlagen beginnen nun mit zwei einzelnen <code>#</code>-Zeilen.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>02.10.2026</b> V1.8 (zuverlässiger Abschlussbutton)
+    <ul>
+      <li>Der Admincomment-Button der abgeschlossenen Meldung erkennt die Fallnummer nun auch direkt aus der URL und verwendet zusätzlich eine lokale Sicherung. Er bleibt damit nach dem Abschicken auch dann verfügbar, wenn Oryven die Abschlussansicht in einer neuen Sitzung öffnet.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>02.10.2026</b> V1.7 (Admincomment automatisch kopieren)
+    <ul>
+      <li>Beim eigenen Abschicken einer vollständig ausgefüllten AET-Bewertung über „Eingaben übernehmen“ wird der erzeugte Admincomment nun automatisch in die Zwischenablage kopiert und bleibt danach weiterhin als Button in der abgeschlossenen Meldung verfügbar. Weiterleitungen und Maßnahmen durch andere Meldungen sind ausgenommen.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>29.09.2026</b> V1.6 (kompakte AET-Abstände)
+    <ul>
+      <li>Die AET-Vorlage beginnt nun mit einer führenden Raute vor der AE-Verstoßzahl. Zwischen den Abschnitten bleibt nur noch eine Leerzeile; nach der Sanktion stehen zwei zusätzliche <code>#</code>-Zeilen.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>29.09.2026</b> V1.5 (AET-Admincomment nach Übernehmen)
+    <ul>
+      <li>Der vorbereitete Admincomment wird nun auch gesichert, wenn „Eingaben übernehmen“ in einem benachbarten nativen Formular liegt. Der Kopierbutton erscheint dadurch anschließend als eigene Aktion direkt unter „Kommentar schreiben (ohne neue Bewertung)“ in der abgeschlossenen Meldung – jedoch nur bei eigener Bearbeitung, nicht bei Weiterleitungen.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>29.09.2026</b> V1.4 (AET-Aktionsleiste entzerrt)
+    <ul>
+      <li>„Admincomment setzen“ und „Zurück“ haben nun einen klaren sichtbaren Abstand und lassen sich getrennt anklicken.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>28.09.2026</b> V1.3 (freie AET-Eingabebereiche)
+    <ul>
+      <li>Die Klammer-Platzhalter für Chattext und Zusammenfassung sind entfernt. Ein <code>#</code> markiert die freie Eingabezeile.</li>
+      <li>Zwischen den Abschnitten der AET-Vorlage stehen jeweils drei Leerzeilen; übernommene Admincomments bleiben durch Leerzeilen voneinander getrennt.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>27.09.2026</b> V1.2 (AET-Vorlage ersetzt Altkommentare)
+    <ul>
+      <li>Eine berechtigte AET-Meldung ersetzt einen vorhandenen Altkommentar nun einmalig durch die vollständige AET-Vorlage.</li>
+      <li>Eigene Änderungen am bereits angelegten AET-Kommentar bleiben anschließend erhalten.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>26.09.2026</b> V1.10 (AET-Verwarnung mit vollständiger Vorlage)
+    <ul>
+      <li>Die Auswahl „AET Verwarnung“ erstellt nun immer die vollständige AET-Vorlage, statt einen kurzen Meldekommentar zu verwenden.</li>
+      <li>Im Abschnitt „Sanktion“ wird „VW ausgesprochen.“ eingetragen und die VW-Maßnahme ausgewählt; bereits ausgefüllte Angaben zu Verstoß und Zusammenfassung bleiben erhalten.</li>
+      <li>„Admincomment setzen“ erscheint nach einer AET-Verwarnung sofort unten im Formular zwischen „Eingaben übernehmen“ und „Zurück“ und bleibt nach dem Übernehmen auch in der abgeschlossenen Meldung als Kopierbutton verfügbar; die Berechtigung wird auch erkannt, wenn die native Auswahl vom Seitenlayout optisch ausgeblendet ist.</li>
+      <li>Der kopierte Admincomment verwendet nun das Format <code>/comment NICK: XX. AE-Verstoß | GRUND | SANKTION | *MELDENUMMER</code>, damit der gesamte Rest als Kommentar des Nicks erkannt wird.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>22.09.2026</b> V1.8 (kontextsensible AET-Bausteine)
+    <ul>
+      <li>AET-Fallbausteine für positive bzw. propagandistische NPD-, AfD-, SED-/DDR- und türkisch-rechtsextreme Bezugnahmen sowie für gruppenbezogene Abwertung oder Gewaltfantasien wegen Körpergewicht ergänzt.</li>
+      <li>Parolen, Codes und Symbolik verlangen nun eine eindeutig rechtsextrem konnotierte sowie zustimmende, verherrlichende oder propagandistische Verwendung. Gewaltbefürwortung ist neben Verherrlichung und Verharmlosung ausdrücklich erfasst.</li>
+      <li>Die Texte stellen klarer auf den konkreten Kontext ab: Neutrale, historische, sachliche oder distanzierende Nennungen sind keine automatische AET-Grundlage. Religiöse oder politische Themen allein genügen ebenfalls nicht.</li>
+      <li>Fehlende neue Bausteine werden in bestehende lokale Einstellungen ergänzt; bereits gespeicherte individuelle Texte bleiben unverändert. Die Auswahl füllt weiterhin nur Verstoß und Zusammenfassung, die Sanktion bleibt eine manuelle Einzelfallentscheidung.</li>
+      <li>Beim Weiterleiten ersetzt die aktuelle AET-Vorlage mit Verstoß, EMS und AE-Vorverstößen einmalig auch einen bereits geschriebenen Kommentar; danach bleiben Änderungen im Weiterleitungsformular erhalten.</li>
+      <li>Die EMS-Kontrolle ist ohne AET-Auffälligkeiten negativ, ohne E-Mail „Negativ / nicht möglich“ und nur bei AET-relevanten Auffälligkeiten positiv.</li>
+      <li>Nach einer berechtigten AET-Bewertung erzeugt „Admincomment setzen“ den kopierbaren Befehl <code>/comment NICK XX. Verstoß | GRUND | SANKTION | *MELDENUMMER</code>. Der Grund stammt aus „Zusammenfassung / Benennung“, nicht aus dem Chattext.</li>
+      <li>Der Admincomment-Button steht in der oberen Aktionsleiste; die Sanktion wird aus den gewählten Maßnahmen übernommen.</li>
+      <li>Die Maßnahmen werden im Admincomment vereinheitlicht benannt: Channellock, <code>/fmute</code>, <code>/cmute</code>, <code>/mute</code>, „VW &amp; Aufklärung“ und „Entfernung Profilinhalt“.</li>
+      <li>„Meldung zur Beweissicherung“ heißt im Admincomment „BWS Meldung“. Bei „Maßnahmen durch andere Meldung“ wird kein Admincomment erzeugt, da ihn der zuständige andere Admin setzt.</li>
+      <li>Die EMS-Kontrolle zeigt nur noch ihren Status. Vollständige Texte früherer Meldungen werden nicht mehr in den Kommentar geschrieben.</li>
+      <li>Eine bereits ausgefüllte AET-Vorlage bleibt beim nachträglichen Umschalten auf „Weiterleiten an: Admin“ erhalten.</li>
+      <li>Schlägt eine Weiterleitung etwa wegen einer fehlenden Team- oder Nickauswahl fehl, wird der ausgefüllte AET-Entwurf beim erneuten Öffnen wiederhergestellt.</li>
+      <li>Bei AET-Weiterleitungen bleibt „Weiterleiten“ deaktiviert, bis ein Team ausgewählt wurde; Nicks allein reichen nicht aus.</li>
+      <li>Der deaktivierte Weiterleiten-Button ist sichtbar ausgegraut.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>19.09.2026</b> V1.7 (Admincall-Optimierungen)
+    <ul>
+      <li>Bei AE-Vorverstößen werden bei vorhandenen Admincomments ausschließlich diese übernommen. Die Übersicht „Meldungen bisher“ bleibt ein Fallback ohne Admincomments; der Hinweis zur manuellen AE-Anzahl entfällt.</li>
+      <li>Die lokale Aussagen-Suche sitzt nun in der Leiste der Meldeprüfungen. Die dortigen Kopierbuttons heißen nun „Meldung verlinken“ und „Meldenummer“.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>18.09.2026</b> V1.0
+    <ul>
+      <li>AET-Kommentarbausteine für Rassismus, Antisemitismus, Islamfeindlichkeit, religiöse Intoleranz, Misogynie/Sexismus, LGBTIQ+-Feindlichkeit, Ableismus, politisch hetzende/demagogische Aussagen, Verschwörungsideologie, Gewaltverherrlichung, Menschenverachtung, NS-/rechtsextremistische Inhalte, Parolen, Codes, Propaganda, Holocaustleugnung und religiösen Extremismus ergänzt.</li>
+      <li>Die Auswahl ergänzt im vollständigen AET-Kommentar nur Verstoß und Zusammenfassung; EMS, AE-Vorverstöße und Sanktion bleiben davon getrennt.</li>
+      <li>Der AET-Baustein ist auch beim Weiterleiten verfügbar und folgt in der rechten Kommentarhilfe der aufgeklappten KCode-Hilfe.</li>
+      <li>Die EMS-Prüfung erkennt verschleierte E-Mail-Adressen auch in abweichenden Profilkarten der Bewertungs- und Weiterleitungsansicht.</li>
+      <li>Leere AET-Platzhaltervorlagen werden nicht mehr als Entwurf wiederhergestellt; zusammengefasste Fälle werten auch positive Einzelbewertungen aus.</li>
+      <li>Falls keine AE-Admincomments vorliegen, werden eindeutig schuldige AET-Fälle aus „Meldungen bisher“ als Vorverstöße übernommen.</li>
+      <li>Die lange Auswahl der AET-Bausteine scrollt innerhalb des Menüs und bleibt damit vollständig erreichbar.</li>
+    </ul>
+  </div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
+    <b>14.09.2026</b> V1.0
+    <ul>
+      <li>Neustart des Changelogs für die AET-Version.</li>
+      <li>Die AET-Verwarnung wird bei bestehenden Einstellungen automatisch ergänzt.</li>
+      <li>AET-Verwarnungen haben einen eigenen Abschnitt in den Einstellungen und ein separates Dropdown bei extremistischen Meldungen.</li>
+    </ul>
+  </div>
+</div>
