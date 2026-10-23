@@ -1,6 +1,13 @@
 <br><div id="content">
   <center><h2>Changelog – Extended Admincall Script</h2></center>
   <div class="memberWrapper" style="margin-bottom: 5px">
+  <b>23.10.2026</b> V1.26 (robuste EMS-Statuszeilen und dunkles KCode-Blau)
+  <ul>
+    <li>EMS-Status verwenden nun Bindestriche statt Gedankenstrichen. Dadurch kann die KCode-Verarbeitung keinen als HTML-Entität gespeicherten Gedankenstrich mehr in eine fehlerhafte neue Zeile aufteilen. Bereits gespeicherte alte Varianten werden beim erneuten Bearbeiten erkannt und ersetzt.</li>
+    <li>Neue AET-Überschriften verwenden nun KCode-Dunkelblau (<code>°[0,0,139]°</code>) statt Kanal-Blau. Bestehende Vorlagen mit Kanal-Blau bleiben vollständig bearbeitbar.</li>
+  </ul>
+</div>
+  <div class="memberWrapper" style="margin-bottom: 5px">
   <b>22.10.2026</b> V1.25 (öffentlicher Changelog-Spiegel)
   <ul>
     <li>Der Versionslink im Admincall lädt den Changelog jetzt aus dem separaten öffentlichen Repository <code>Windows-Browser-Scripts-Changelog</code>. Das Hauptrepository kann privat bleiben.</li>
